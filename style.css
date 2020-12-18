@@ -1,0 +1,107 @@
+@import "/nav.css";
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666666;
+}
+
+/* scrollbar */
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+body::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+body::-webkit-scrollbar-thumb {
+  background: #666666;
+}
+
+/* Headings */
+h2 {
+  background-color: #666666;
+  margin: auto;
+  padding: 1.25em;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 1.8em;
+  font-size: 14px;
+}
+/* divs */
+.pimg1 {
+  background-image: url(/img/img1.jpg);
+
+  min-height: 100%;
+}
+.pimg2 {
+  background-image: url(/img/img2.jpg);
+
+  min-height: 80%;
+}
+.pimg3 {
+  background-image: url(/img/img3.jpg);
+
+  min-height: 80%;
+}
+.pimg4 {
+  background-image: url(/img/img4.jpg);
+
+  min-height: 80%;
+}
+/* parallax */
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4 {
+  position: relative;
+  opacity: 0.8;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* section paragraphs */
+.section {
+  text-align: center;
+  padding: 3.125em 5em;
+}
+/* dark-light style */
+.section-light {
+  background-color: #f4f4f4;
+  color: #666666;
+}
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+/* image caption */
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.6875em;
+  letter-spacing: 1.5em;
+  text-transform: uppercase;
+}
+.ptext .border {
+  background-color: #111;
+  color: #ffffff;
+  padding: 1.25em;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    letter-spacing: 0.2em;
+  }
+  .ptext {
+    font-size: px;
+    letter-spacing: 0.9em;
+  }
+}
